@@ -1,0 +1,467 @@
+/* Fonte poppins */
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Changa+One:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fjalla+One&family=Gabarito:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Metamorphous&family=Orbitron:wght@400..900&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Roboto:ital,wght@0,100..900;1,100..900&family=Trade+Winds&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Yesteryear&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* Cabecalho */
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.cabecalho a {
+    color: #292F36;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.cabecalho a span {
+    color: #FF6B6B;
+}
+
+/* Lado esquerdo */
+
+.navegacao ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.navegacao ul li a {
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.navegacao ul li a:hover {
+    color: #FF6B6B;
+    cursor: pointer;
+    border-bottom: 2px solid #FF6B6B;
+    transition: 0.5s;
+}
+
+.navegacao ul li {
+    list-style: none;
+}
+
+.join>a {
+    padding: 9px 20px;
+    background-color: #FF6B6B;
+    border-radius: 20px;
+    color: white;
+}
+
+.cabecalho .navegacao ul .join > a:hover {
+    background-color: #a53030;
+    color: white;
+
+    /* transform: scale(2.1); */
+    transition: 0.5s;
+
+}
+
+/* Lado direito navegacao */
+
+.sessao1 {
+    background-image: url("../assets/coracao.png");
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+
+}
+
+.sessao1 .camada {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.56);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.sessao1 .camada div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.sessao1 .camada h2 {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.sessao1 .camada p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #777777;
+}
+
+.sessao1 .camada button {
+    /* padding: 8px 20px; */
+    width: 120px;
+    height: 41px;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: 400;
+    background-color: #FF6B6B;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 0 auto;
+
+}
+
+.sessao1 .camada button:hover {
+    background-color: #d72323;
+    color: white;
+    transition: 0.5s;
+}
+
+/* sessao 1 parte cima */
+
+.form {
+    background-color: white;
+    width: 450px;
+    height: 450px;
+    padding: 20px 20px;
+    border-radius: 15px;
+}
+
+.sessao1 .form .titulo {
+    font-size: 24px;
+}
+
+.inputs input {
+    width: 90%;
+    height: 40px;
+    border-radius: 10px;
+    margin: 0px auto;
+    padding: 4px 15px;
+    font-size: 12pt;
+    border: 1px solid #484848;
+    
+}
+
+.inputs>select {
+    width: 90%;
+    height: 40px;
+    border-radius: 10px;
+    margin: 0px auto;
+    padding: 4px 15px
+}
+
+.form form .inputs>p {
+    font-size: 14px;
+    text-align: center;
+}
+
+.form form .inputs > p > span {
+    color: #FF6B6B;
+    font-weight: 600;
+}
+
+/* Sessão 1 */
+
+/* Agora é a sessão 2 */
+
+.sessao2 {
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+
+}
+
+.sessao2 h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    border-bottom: 5px solid #FF6B6B;
+}
+
+/* Esse é o titulo */
+
+.sessao2 .articles {
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+    
+
+}
+
+.sessao2 .articles article {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    padding: 0px 20px;
+
+}
+
+/* Abaixo vou botar o hover para cada article */
+
+.sessao2 .articles article:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.sessao2 .articles article img {
+    width: 30px;
+}
+
+.sessao2 .articles article h3{
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+.sessao2 .articles article p{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    text-align: center;
+
+}
+
+/* Formatação da sessao 3 */
+
+.sessao3 {
+    height: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    
+
+
+}
+
+.sessao3 article {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.sessao3 article h2{
+    font-family: "Poppins", sans-serif;
+    font-size: 42px;
+    border-bottom: 5px solid #FF6B6B;
+    text-align: center;
+
+
+}
+
+.sessao3 article p {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    
+}
+
+.sessao3 article ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+
+.sessao3 article ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.sessao3 article ul li span{
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #d72323;
+}
+
+/* Formatação da imagem */
+
+.sessao3 figure  {
+    /* height: 600px; */
+    height: 90%;
+    border-radius: 10px;
+}
+
+.sessao3 figure img {
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Formatacao da sessao 4 */
+
+.sessao4 {
+    height: 300px;
+    background-color: #FF6B6B;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    color: white;
+}
+
+.sessao4 h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.sessao4 p {
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.sessao4 button {
+    
+    /* height: 35px;
+    width: 150px; */
+
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    
+
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #e43d3d;
+    color: white;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.sessao4 button:hover {
+    background-color: #a53030;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* Formatação do footer */
+
+footer {
+    height: 350px;
+    background-color: #292F36;
+    color: white;
+    font-family: "Poppins", sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+footer .footer-div  {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+    gap: 40px
+}
+
+
+footer .footer-div .div-footer1 {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.nav-footer {
+    display: flex;
+    
+    gap: 10px;
+    
+    
+}
+
+.nav-footer li a i {
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3E444A;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.nav-footer li a i:hover {
+    background-color: #FF6B6B;
+    transition: 0.5s;
+    scale: 1.2;
+}
+
+.nav-footer li {
+    list-style: none;
+}
+
+
+
+footer .footer-div .div-footer2 nav ul li  {
+    list-style: none;
+    margin: 10px 0px;
+}
+
+footer .footer-div .div-footer3 nav ul li  {
+    list-style: none;
+    margin: 10px 0px;
+}
+
+.link-footer {
+    text-decoration: none;
+    color: #FF8E8E;
+}
+
+.link-footer:hover {
+    text-decoration: underline;
+    color: #ef4a4a;
+}
+
+.div-footer4 p i{
+    color: #FF6B6B;
+    margin-right: 9px;
+}
